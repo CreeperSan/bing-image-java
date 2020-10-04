@@ -21,6 +21,9 @@ fun main(args: Array<String>) {
         args.isNotEmpty() && args[0] == "backup" -> { // 备份
             BackupEntrance().run(args)
         }
+        args.isNotEmpty() && args[0] == "backup_nodejs" -> { // 从 bing-image-nodejs 中备份
+            BackupNodejsBingImageApplication().run(args)
+        }
         args.isNotEmpty() && args[0] == "restore" -> { // 恢复
             RestoreEntrance().run(args)
         }
